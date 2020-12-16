@@ -9,3 +9,5 @@
 ** Assets 
 
 资产管理已经测试完成，位于dev1 分支。
+** Output manager
+输出管理已经测试完成，位于 outputmanager 分支上。
