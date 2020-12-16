@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn --save-dev html-webpack-plugin
+
+PATH: 
+  /home/mrrevolt/bin:/usr/local/bin:/usr/bin/:/home/mrrevolt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/integration/nsight-compute:/opt/cuda/integration/nsight-systems:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/mrrevolt/Personal/webpack-tools/package.json: Unexpected token } in JSON at position 260
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "webpack-tools",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack --config webpack.config.js",
+      "start": "webpack serve --open",
+      
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "clean-webpack-plugin": "^3.0.0",
+      "html-webpack-plugin": "^4.5.0",
+      "webpack": "^5.10.3",
+      "webpack-cli": "^4.2.0"
+    },
+    "dependencies": {
+      "lodash": "^4.17.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
